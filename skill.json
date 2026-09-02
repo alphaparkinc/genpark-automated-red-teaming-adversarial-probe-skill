@@ -1,0 +1,39 @@
+{
+  "name": "genpark-automated-red-teaming-adversarial-probe-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Automated red teaming adversarial safety probe executing automated jailbreak fuzzing and PII exfiltration audits.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-security",
+  "tags": [
+    "red-teaming",
+    "garak",
+    "pyrit",
+    "adversarial-probing",
+    "llm-safety"
+  ],
+  "inputs": {
+    "target_system_endpoint": {
+      "type": "string"
+    },
+    "attack_vector_type": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "red_team_probe_id": {
+      "type": "string"
+    },
+    "system_robustness_score_pct": {
+      "type": "number"
+    },
+    "jailbreak_vulnerabilities_found_count": {
+      "type": "integer"
+    },
+    "red_team_audit_dossier_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
